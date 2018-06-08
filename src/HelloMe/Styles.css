@@ -60,7 +60,7 @@ a {
 
 header {
     text-align: center;
-    background: url('images/portland.jpg') no-repeat top center;
+    background: url('images/phoenix-skyline.jpg') no-repeat bottom center;
     background-size: cover;
     overflow: hidden;
     padding-top: 60px;
@@ -80,7 +80,7 @@ header {
     }
 
         header .profile-image:hover {
-            transform: scale(1.2) rotate(5deg);
+            transform: scale(1.2) rotate(10deg);
         }
 
 .tag {
@@ -94,7 +94,7 @@ header {
 
 .location {
     background-color: #222;
-    color: yellow;
+    color: white;
 }
 
 .card {
