@@ -219,4 +219,15 @@ a.social:hover {
         max-width: 1200px;
         margin: 40px auto;
     }
+
+    h3{
+        color: maroon;
+        letter-spacing: .5px;
+    }
+
+    .card-title{
+        text-align: center;
+        border: 3px solid black;
+        border-radius: 10px;
+    }
 }
