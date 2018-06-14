@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+
+   Happy New Years
+   Author: Lee Owen
+   Date:   2/4/2018
+
+   Filename: nye.html
+   Supporting files: e.jpg, library.js, newyearseve.gif, styles.css
+-->
+
+    <title>Elegance Entertainment</title>
+    <link href="../Content/styles.css" rel="stylesheet" type="text/css" />
+    <script src="../Content/library.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <table id="npn">
+        <tr>
+            <!-- Company Hyperlinks -->
+            <td id="links" rowspan="4">
+                <a href="#">The New Year's Event Agenda</a>
+                <a href="#"></a>
+                <a href="#">New Year's Eve Happy Hour</a>
+                <a href="#">New Year's Eve Concert</a>
+                <a href="#">New Year's Eve Party</a>
+                <a href="#">New Year's Day Brunch</a>
+            </td>
+
+            <!-- Days until New Year's Eve -->
+            <td id="daycell">
+                <!-- Add script tag and declare variables and assign values -->
+                <script type="text/javascript">
+                    var Today = new Date();
+                    var ThisDay = Today.getDate();
+                    var ThisMonth = Today.getMonth() + 1;
+                    var ThisYear = Today.getFullYear();
+                    var DaysLeft = NYEDays(Today);
+                    var MonthTxt = new Array("", "January", "February", "March", "April", "May", "Jun", "July", "August", "September", "October", "November", "December");
+
+                    <!-- Add date output statement -->
+                    document.write("Today is " + MonthTxt[ThisMonth] + " " + ThisDay + ", " + ThisYear + "<br />");
+
+                    <!-- Add decision statment for number of days -->
+                    if (DaysLeft > 0) {
+                        document.write("Only " + DaysLeft + " days until New Year's Eve");
+                    } else {
+                        document.write("IT'S NEW YEARS EVE!");
+                    }
+                </script>
+
+            </td>
+        </tr>
+
+        <tr>
+            <!-- Company Logo -->
+            <td id="logo">
+                <!-- Add new years eve gif with alt of New Years Eve -->
+                <img src="../Images/newyearseve.gif" alt="New Year's Eve!" />
+            </td>
+        </tr>
+
+        <tr>
+            <!-- Articles about the company -->
+            <td>
+                <table>
+                    <tr>
+                        <!-- Welcome message -->
+                        <td id="firstcol">
+                            <p>
+                                NEW YEAR'S EVE ENTERTAINMENT Consider us your complete New Year's Eve entertainment needs. We offer a excellent two days of events of elegance and style.</p>
+
+                            <!-- Latest news -->
+                            <h3>NEW YEAR'S EVE HAPPY HOUR</h3>
+                            <p>It starts at 5:00p.m. Mengle with everyone while consuming the finest spirits and eating the best horderves. </p>
+
+                            <h3>NEW YEAR'S EVE CONCERT</h3>
+                            <p>When you hear the band play and the artists sing, you are hearing our concert At 7:00p.m., listen to some of the best groups Atlanta has to offer. </p>
+
+                            <h3>NEW YEAR'S EVE PARTY</h3>
+                            <p>This is the event of the year. Jam to the sounds of everyone's favorite radio disc jockey and bring in the new year with a bang starting at 10:00 p.m. </p>
+
+                            <h3>NEW YEAR'S DAY BRUNCH</h3>
+                            <p>There is no other way to close out the vent with a delicious brunch with everyone's breakfast and lunch favorites at 11:00 a.m. </p>
+                        </td>
+
+                        <!-- Information about the company -->
+                        <td id="secondcol">
+                            <h3>Elegance Entertainment</h3>
+                            <p>
+                                <!-- Add e jpeg with a style of float: right; margin: 0px 0px 10px 10px -->
+                                <img src="../Images/e.jpg" alt="E Logo" style="float: right; margin: 0px 0px 10px 10px" /> Elegance Entertainment is a company that specialize in major events. Established in 2003, Elegance has been providing events for the professional market in the Atlanta area.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <!-- Contact Information -->
+            <td id="contact">
+                <b>Elegance Entertainment</b> | 324 King Avenue | Atlanta, GA 30332 | (404) 555-2015
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
